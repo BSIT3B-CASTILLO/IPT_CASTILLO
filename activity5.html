@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        body.light {
+            background-color: white;
+            color: black;
+        }
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="light">
+
+    <h1>Activity 1</h1>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="addNumbers()">Add</button>
+    <p id="result"></p>
+
+    <button onclick="toggleMode()">Toggle Light/Dark Mode</button>
+
+    <script>
+        function addNumbers() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('result').innerText = "Please enter valid numbers.";
+                return;
+            }
+
+            const sum = num1 + num2;
+            document.getElementById('result').innerText = `Result: ${sum}`;
+        }
+
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle('dark');
+            body.classList.toggle('light');
+        }
+    </script>
+</body>
+</html>

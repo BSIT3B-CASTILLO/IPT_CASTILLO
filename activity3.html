@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 50px;
+            margin-bottom: 100px;
+        }
+
+        .photo-box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 20px auto;
+            position: absolute;
+            right: 160px;
+            top: 10px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+
+        .section-title {
+            background-color: #000;
+            border-radius: 10px;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .form-group h3 {
+            width: 40%;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 55%;
+            padding: 5px;
+            border-bottom: 2px solid black; /* Only the bottom border will be visible */
+      border-top: none;    /* No top border */
+      border-left: none;   /* No left border */
+      border-right: none;  
+        }
+
+        .form-group-full {
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .form-group-full h3 {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group-full input {
+            width: 20%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+
+        .footer {
+            margin-top: 30px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>BIO-DATA</h1>
+            <div class="photo-box"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <h2>PERSONAL DATA </h2>
+           </div>
+           
+            <div class="form-group">
+                <h3>Position Desired:</h3><input type="text">
+                <h3>Date:</h3><input type="text">
+            </div>
+            
+            <div class="form-group">
+                <h3>Name:</h3><input type="text">
+                <h3>Gender:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>City Address:</h3><input type="text">
+                <h3>Provincial Address:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Telephone:</h3><input type="text">
+                <h3>Cellphone:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>E-mail Address:</h3><input type="text">
+                <h3>Date of Birth:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Birth of Place:</h3><input type="text">
+                <h3>Civil Status:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Citizenship:</h3><input type="text">
+                <h3>Height:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Religion:</h3><input type="text">
+                <h3>Weight:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Spouse:</h3><input type="text">
+                <h3>Occupation:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Name of Children:</h3><input type="text">
+                <h3>Date of Birth:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Father’s Name:</h3><input type="text">
+                <h3>Occupation:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Mother’s Name:</h3><input type="text">
+                <h3>Occupation:</h3><input type="text">
+            </div>
+            <div class="form-group-full">
+                <h3>Language or dialect spoken and written:</h3><input type="text">
+            </div>
+            <div class="form-group-full">
+                <h3>Person to be contacted in case of emergency:</h3><input type="text">
+                
+                <div class="form-group-full">
+                <h3>His or her address and telephone:</h3><input type="text">
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="section-title">
+            <h2>EDUCATIONAL BACKGROUND</h2>
+            </div>
+            <div class="form-group">
+                <h3>Elementary:</h3><input type="text">
+                <h3>Year Graduated:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>High School:</h3><input type="text">
+                <h3>Year Graduated:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>College:</h3><input type="text">
+                <h3>Year Graduated:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Degree Received:</h3><input type="text">
+                <h3>Special Skills:</h3><input type="text">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+            <h2>EMPLOYMENT RECORD</h2>
+            
+            </div>
+            <div class="form-group">
+                <h3>Company Name:</h3><input type="text">
+                <h3>Position:</h3><input type="text">
+                <h3>From:</h3><input type="text">
+                <h3>To:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Company Name:</h3><input type="text">
+                <h3>Position:</h3><input type="text">
+                <h3>From:</h3><input type="text">
+                <h3>To:</h3><input type="text">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+            <h2>CHARACTER REFERENCE</h2>
+            
+            </div>
+            <div class="form-group">
+                <h3>Name:</h3><input type="text">
+                <h3>Company:</h3><input type="text">
+                <h3>Position:</h3><input type="text">
+                <h3>Contact No.:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Name:</h3><input type="text">
+                <h3>Company:</h3><input type="text">
+                <h3>Position:</h3><input type="text">
+                <h3>Contact No.:</h3><input type="text">
+            </div>
+        </div>
+
+        <div class="section">
+            
+            <div class="section-title">
+            <h2>RESIDENTIAL DETAILS</h2>
+            </div>
+            <div class="form-group">
+                <h3>Res. Cert. No.:</h3><input type="text">
+                <h3>Issued at:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>Issued on:</h3><input type="text">
+                <h3>SSS:</h3><input type="text">
+            </div>
+            <div class="form-group">
+                <h3>TIN:</h3><input type="text">
+                <h3>NBI No.:</h3><input type="text">
+            </div>
+            <div class="form-group-full">
+                <h3>Passport No.:</h3><input type="text">
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>I hereby certify that the above information is true and correct to the best of my knowledge and belief. I also understand that any misinterpretation will be considered reason for withdrawal of an offer or subsequent dismissal if employed.</p>
+            <div class="form-group-full">
+                <h3>Applicant’s Signature:</h3><input type="text">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
